@@ -113,6 +113,10 @@ include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 # Treble
 BOARD_VNDK_VERSION := current
 
+# Verity
+# Only needed for signing
+BOARD_AVB_ENABLE := false
+
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
 BOARD_WPA_SUPPLICANT_DRIVER := NL80211
